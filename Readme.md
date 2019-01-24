@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Мария Савчук](https://up.htmlacademy.ru/htmlcss/24/user/957881).
-* Наставник: [Дмитрий Гуляев] (https://htmlacademy.ru/profile/dima).
+* Наставник: <a href="https://htmlacademy.ru/profile/id87930">Дмитрий Гуляев.</a>
 
 ---
 
