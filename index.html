@@ -71,11 +71,30 @@
       <section>
       <h4>Заинтересовались?</h4>
       <p>Укажите предполагаемые даты поездки,<br>и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-      <!-- Здесь будет форма
-       <img src="img/calendar.svg" width="20" height="20" alt="Календарь">
-      -->
+      <form class="hotel-search" action="https://echo.htmlacademy.ru" method="post">
+        <p class="form-name">Поиск гостиницы в Седоне</p>
+          <label class="arrival-date">
+          Дата заезда:
+          <input type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
+          <img src="img/calendar.svg" width="20" height="20" alt="Календарь">
+        </label>
+        <p class="departure-date">
+            <label for="departure-date">Дата выезда:</label>
+            <input id="departure-date" type="text" name="departure-date" value="" placeholder="4 июля 2017">
+            <img src="img/calendar.svg" width="20" height="20" alt="Календарь">
+        </p>
+        <p class="adults">
+            <label for="adults">Взрослые:</label>
+            <input id="adults" type="text" name="adults-number" value="" placeholder="2">
+        </p>
+        <p class="children">
+            <label for="children">Дети:</label>
+            <input id="children" type="text" name="children-number" value="" placeholder="0">
+        </p>
+        <button class="button" type="submit">Найти</button>
+      </form>
       <div>
-        <img src="img/map.jpg" width="1200" height="475" alt="Карта">
+        <img src="img/map.jpg" width="1200" height="475" alt="Карта Седоны: город находится в Аризоне южнее Флагстаффа">
       </div>
     </section>
     </main>
@@ -83,9 +102,9 @@
       <p class="#">#visitsedona</p>
       <div class="social">
         <ul>
-          <li><a class="social-button" href="#"><img src="img/twitter.svg" width="17" height="15" alt="Логотип Твиттер"></a>></li>
-          <li><a class="social-button" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Логотип Facebook"></a></li>
-          <li><a class="social-button" href="#"><img src="img/youtube.svg" width="20" height="15" alt="Логотип Youtube"></a></li>
+          <li><a class="social-button" href="#"><img src="img/twitter.svg" width="17" height="15" alt="Логотип Твиттер" aria-label="Ссылка на группу Твиттер"></a></li>
+          <li><a class="social-button" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Логотип Facebook" aria-label="Ссылка на группу Фейсбук"></a></li>
+          <li><a class="social-button" href="#"><img src="img/youtube.svg" width="20" height="15" alt="Логотип Youtube" aria-label="Ссылка на группу Ютуб"></a></li>
         </ul>
       </div>
       <p class="copyright">
