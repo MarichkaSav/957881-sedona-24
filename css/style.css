@@ -8,6 +8,7 @@ body {
     text-transform: uppercase;
 
     background-color: #ffffff;
+    width: 1200px;
 }
 
 a {
@@ -101,15 +102,34 @@ a {
     line-height: 26px;
     font-weight: 700;
     color: #000000;
+    display: flex;
     background-color: #ffffff;
+    outline: 2px solid red;
+    min-height: 56px;
+}
+
+.navigation-logo {
+    outline: 2px solid red;
+    width: 138px;
+    min-height: 71px;
 }
 
 .site-navigation {
-list-style: none;
+    list-style: none;
+    outline: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 56px;
+    padding-left: 73px;
+    padding-right: 73px;
+    padding-top: 22px;
+    vertical-align: middle;
 }
 
+
 .site-navigation a {
-color: #000000;
+    color: #000000;
 }
 
 .site-navigation a:hover,
@@ -223,6 +243,18 @@ color: #81b3d2;
     border: solid #e5e5e5 2px;
 }
 
+.page-footer {
+    width: 100%;
+    outline: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 132px;
+    padding-right: 101px;
+    padding-bottom: 36px;
+    padding-top: 36px;
+
+}
+
 .hashtag {
     font-size: 21px;
     line-height: 26px;
@@ -231,6 +263,16 @@ color: #81b3d2;
 
 .social-icons {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-button {
+    background-color: #81b3d2;
+    width: 46px;
+    height: 48px;
+   
+    
 }
 
 .copyright p {
