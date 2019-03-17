@@ -67,12 +67,38 @@ a {
 }
 
 .sedona-hotels {
+    margin: 0;
+    width: 100%;
+    padding: 0;
     list-style: none;
+    display: block;
+}
+
+.sedona-hotels li {
+    margin: 0;
+    display: flex;
+    border: 1px solid #e5e5e5;
+    padding-left: 73px;
+    padding-right: 73px;
+    outline: 2px solid red;
+}
+
+.rating p {
+    color: #666666;
+    background-color: #f2f2f2;
+    margin-left: auto;
 }
 
 .rating {
-    color: #666666;
-    background-color: #f2f2f2;
+    margin-left: auto;
+}
+
+.sedona-hotels div {
+    outline: 2px solid red;
+}
+
+.hotel-description {
+    margin-left: 30px;
 }
 
 .button {
@@ -99,32 +125,39 @@ a {
 }
 
 .main-navigation {
+    padding: 0;
+    margin: 0;
     line-height: 26px;
     font-weight: 700;
     color: #000000;
     display: flex;
+    width: 1200px;
     background-color: #ffffff;
     outline: 2px solid red;
-    min-height: 56px;
+    position: absolute;
 }
 
 .navigation-logo {
+    padding: 0;
+    margin: 0;
     outline: 2px solid red;
     width: 138px;
-    min-height: 71px;
+    height: 56px;
+
 }
 
 .site-navigation {
+    margin: 0;
+    padding: 0;
     list-style: none;
     outline: 2px solid red;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    min-height: 56px;
     padding-left: 73px;
     padding-right: 73px;
-    padding-top: 22px;
-    vertical-align: middle;
+    align-items: center;
+    min-height: 56px;
 }
 
 
@@ -141,10 +174,37 @@ color: #81b3d2;
     color: #cacaca;
 }
 
+.layout-welcome {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 132px;
+    left: 371px;
+}
+
+.layout-polygon {
+    position: absolute;
+    top: 496px;
+}
+
 .main-advantages {
     list-style: none;
-    font-size: 21px;
-    line-height: 21px;
+    margin: 0;
+    padding: 0;
+}
+
+.advantage-1 {
+    display: block;
+    float: left;
+    width: 400px;
+    height: 256px;
+    background-color: #81b3d2;
+    color: #ffffff;
+    outline: 2px solid red;
+}
+
+.advantage-1 p {
+    color: #ffffff;
 }
 
 .advantages h1 {
@@ -152,6 +212,8 @@ color: #81b3d2;
     line-height: 26px;
     text-align: center;
     font-weight: 700;
+    margin-top: 65px;
+    outline: 2px solid red;
 }
 
 .advantages h3 {
@@ -164,6 +226,8 @@ color: #81b3d2;
     text-align: center;
     line-height: 26px;
     color: #333333;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 .advantage {
@@ -171,41 +235,118 @@ color: #81b3d2;
 }
 
 .sedona-features {
-    font-size: 21px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     list-style: none;
     text-align: center;
+    padding-left: 73px;
+    padding-right: 63px;
+    outline: 2px solid red;
+    width: auto;
+    min-height: 330px;
+   
+}
+
+.sedona-features h4 {
+    font-size: 21px;
 }
 
 .sedona-feature p {
     color: #333333;
 }
 
+.advantage-2 {
+    padding: 0;
+    margin: 0;
+    display: block;
+    float: right;
+    width: 400px;
+    min-height: 256px;
+    background-color: #81b3d2;
+    color: #ffffff;
+    outline: 2px solid red;
+}
+
+
 .advantage p:not(:nth-child(3)):not(:nth-child(4)):not(:nth-child(5)) {
     color: #333333;
 }
 
+.advantage:nth-child(3) div,
+.advantage:nth-child(4) div,
+.advantage:nth-child(5) div  {
+    padding: 0;
+    margin: 0;
+    display: block;
+    float: left;
+    width: 400px;
+    background-color: #eeeeee;
+    min-height: 256px;
+    outline: 2px solid red;
+    margin-bottom: 55px;
+}
+
+.advantage:nth-child(3) h3,
+.advantage:nth-child(4) h3,
+.advantage:nth-child(5) h3  {
+    margin-top: 50px;
+}
+
+.advantage:nth-child(3) p,
+.advantage:nth-child(4) p,
+.advantage:nth-child(5) p  {
+    margin-bottom: 62px;
+}
+
 .booking h4 {
+    margin: 0;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
     text-align: center;
+    outline: 2px solid red;
+    margin-bottom: 30px;
 }
 
 .booking p:first-of-type {
     text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
 }
 
 .booking-proposal {
     line-height: 24px;
     color: #333333;
+    outline: 2px solid red;
+}
+
+form {
+    width: 570px;
+    outline: 2px solid red;
+    left: 315px;
+    position: absolute;
+    background-color: #ffffff;
+}
+
+.layout-form {
+    padding: 55px;
 }
 
 .form-name {
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
     color: #ffffff;
     background-color: #766357;
+    width: 570px;
+    min-height: 86px;
+    outline: 2px solid red;
 }
 
 .form-name:hover,
@@ -244,15 +385,15 @@ color: #81b3d2;
 }
 
 .page-footer {
-    width: 100%;
+    margin: 0;
+    width: auto;
     outline: 2px solid red;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-left: 132px;
     padding-right: 101px;
-    padding-bottom: 36px;
-    padding-top: 36px;
-
+    min-height: 120px; 
 }
 
 .hashtag {
@@ -265,14 +406,26 @@ color: #81b3d2;
     list-style: none;
     display: flex;
     justify-content: space-between;
+    width: 150px;
+    min-height: 48px;
+    
 }
 
-.social-button {
+.social-icon {
     background-color: #81b3d2;
     width: 46px;
     height: 48px;
-   
-    
+}
+
+.social-button {
+    outline: 2px solid red;
+    width: 46px;
+    min-height: 48px;
+    display: flex;
+}
+
+.social-button img {
+    margin: auto auto;
 }
 
 .copyright p {

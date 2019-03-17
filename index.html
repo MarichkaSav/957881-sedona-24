@@ -10,18 +10,18 @@
   <body>
     <header>
         <nav class="main-navigation">
-          <a class="navigation-logo"><img src="img/logo-sedona.svg" width="140" height="70" alt="Логотип Седона"></a>
          <ul class="site-navigation">
             <li class="navigation-item"><a href="info.html">Информация</a></li>
             <li class="navigation-item"><a href="photo-video.html">Фото и видео</a></li>
+            <a class="navigation-logo"><img src="img/logo-sedona.svg" width="140" height="70" alt="Логотип Седона"></a>
             <li class="navigation-item"><a href="map.html">Карта штата</a></li>
             <li class="navigation-item"><a href="catalog.html">Гостиницы</a></li>
          </ul>
         </nav>
       <div>
-        <img src="img/background-photo.jpg" width="1200" height="565" alt="Фоновое фото">
-        <img src="img/intro-welcome.svg" width="255" height="85" alt="Добро пожаловать">
-        <img src="img/polygon.jpg" width="1200" height="60" alt="Полигон декорация">
+        <img class="layout-background" src="img/background-photo.jpg" width="1200" height="565" alt="Фоновое фото">
+        <img class="layout-welcome" src="img/intro-welcome.svg" width="459" height="353" alt="Добро пожаловать">
+        <img class="layout-polygon" src="img/polygon.jpg" width="1200" height="60" alt="Полигон декорация">
       </div>
     </header>
     <main>
@@ -31,9 +31,11 @@
       <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       <ul class="main-advantages">
         <li class="advantage">
+          <div class="advantage-1">
            <h3>Настоящий<br> городок</h3>
-          <p>Седона - не аттракцион для туристов,<br> там течет своя жизнь</p>
-          <img src="img/true-city.jpg" width="800" height="255" alt="Настоящий городок">
+           <p>Седона - не аттракцион для туристов,<br> там течет своя жизнь</p>
+          </div>
+          <img src="img/true-city.jpg" width="800" height="256" alt="Настоящий городок">
           <ul class="sedona-features">
             <li class="sedona-feature">
               <img src="img/icon-1-home.svg" width="72" height="75" alt="Жилье">
@@ -53,29 +55,38 @@
           </ul>
         </li>
         <li class="advantage">
-          <img src="img/devil-bridge.jpg" width="800" height="255" alt="Мост дьявола">
+          <img src="img/devil-bridge.jpg" width="800" height="256" alt="Мост дьявола">
+          <div class="advantage-2">
           <h3>Там есть<br> мост дьявола</h3>
           <p>Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
+          </div>
         </li>
         <li class="advantage">
+          <div class="advantage-3">
           <h3>Небольшая<br> площадь</h3>
           <p>Все достопримечательности<br> находятся очень близко</p>
+          </div>
         </li>
         <li class="advantage">
+          <div class="advantage-4">
           <h3>Красивая<br> дорога</h3>
           <p>Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
+          </div>
         </li>
         <li class="advantage">
+          <div class="advantage-5">
           <h3>Мало<br> туристов</h3>
           <p>Большинство едет в Гранд Каньон<br> и толпится там</p>
+          </div>
         </li>
       </ul>
       </section>
       <section class="booking">
       <h4>Заинтересовались?</h4>
       <p class="booking-proposal">Укажите предполагаемые даты поездки,<br>и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+      <p class="form-name">Поиск гостиницы в Седоне</p>
       <form class="hotel-search" action="https://echo.htmlacademy.ru" method="post">
-        <p class="form-name">Поиск гостиницы в Седоне</p>
+        <div class="layout-form">
           <label for="arrival-date">Дата заезда:</label>
           <input id="arrival-date" type="text" name="arrival-date" value="24 апреля 2017">
           <button><img src="img/calendar.svg" width="20" height="20" alt="Календарь"></button>
@@ -93,15 +104,15 @@
             <input id="children" type="text" name="children-number" value="0">
         </p>
         <button class="button" type="submit">Найти</button>
+        </div>
       </form>
       <div>
-        <img src="img/map.jpg" width="1200" height="475" alt="Карта Седоны: город находится в Аризоне южнее Флагстаффа">
+        <img class="sedona-map" src="img/map.jpg" width="1200" height="593" alt="Карта Седоны: город находится в Аризоне южнее Флагстаффа">
       </div>
     </section>
     </main>
     <footer class="page-footer">
       <p class="hashtag">#visitsedona</p>
-      <div class="social">
         <ul class="social-icons">
           <li class="social-icon">
             <a class="social-button" href="#"><img src="img/twitter.svg" width="17" height="15" alt="Логотип Твиттер">
@@ -119,7 +130,6 @@
             </a>
           </li>
         </ul>
-      </div>
       <p class="copyright">
         Website by
         <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="40" alt="Логотип html Academy"></a>
