@@ -6,20 +6,28 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Pixel Glass index -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        background-image: url( "pp/img/sedona-index.jpg" );
+      }
+    </style>
+    <script src="pp/pp-script.js"></script>
+	<link rel="stylesheet" href="pp/pp-style.css">
+<!-- // Pixel Glass -->
   </head>
   <body>
+    
     <header>
         <nav class="main-navigation">
             <a class="navigation-logo"><img src="img/logo-sedona.svg" width="140" height="70" alt="Логотип Седона"></a>
          <ul class="site-navigation">
-           <div class="navigation-left">
             <li class="navigation-item"><a href="info.html">Информация</a></li>
             <li class="navigation-item"><a href="photo-video.html">Фото и видео</a></li>
-          </div>
-        <div class="navigation-right">
             <li class="navigation-item"><a href="map.html">Карта штата</a></li>
-            <li class="navigation-item-active"><a href="catalog.html">Гостиницы</a></li>
-          </div>
+            <li class="navigation-item navigation-item-active"><a href="catalog.html">Гостиницы</a></li>
          </ul>
         </nav>
       <div>
@@ -116,30 +124,18 @@
           </div>
         <div class="adults">
             <label for="adults">Взрослые:</label>
-            <button class="minus-1" type="button">
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="3" viewBox="0 0 12 3">
-                <image id="_" data-name="" width="12" height="3" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAADCAYAAACnI+4yAAAAJklEQVQImWNcuXJlKAMDwyoG4kAYEwMDgxKRikFACaSBeMDAwAAA4bEDmgdSTr8AAAAASUVORK5CYII="/>
-              </svg>                
-          </button>
+             <button class="button-change" type="button">-</button>              
             <input class="input-number" id="adults" type="number" name="adults-number" value="2">
-            <button class="plus-1" type="button">
-              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
-                  <image id="_" data-name="" width="11" height="11" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAAVUlEQVQYlWNkQAMrV648w8DAYMzAwHA2PDzcBFmWCV0xVCEyjVcxTkCSYkYkNxICZ5mIVAj2A0jxeyIVv8cWdP9h7PDwcBR52oUGNsUwP6D6hYGBAQDrUhFjIwl98gAAAABJRU5ErkJggg=="/>
-              </svg>                                
-          </button>
+          <button class="button-change" type="button">+</button>                                
         </div>
         <div class="children">
             <label for="children">Дети:</label>
-            <button class="minus-1" type="button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="3" viewBox="0 0 12 3">
-                  <image id="_" data-name="" width="12" height="3" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAADCAYAAACnI+4yAAAAJklEQVQImWNcuXJlKAMDwyoG4kAYEwMDgxKRikFACaSBeMDAwAAA4bEDmgdSTr8AAAAASUVORK5CYII="/>
-                </svg>                
+            <button class="button-change" type="button">
+                -               
             </button>
-            <input id="children" type="number" name="children-number" value="0">
-            <button class="plus-1" type="button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
-                    <image id="_" data-name="" width="11" height="11" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAAVUlEQVQYlWNkQAMrV648w8DAYMzAwHA2PDzcBFmWCV0xVCEyjVcxTkCSYkYkNxICZ5mIVAj2A0jxeyIVv8cWdP9h7PDwcBR52oUGNsUwP6D6hYGBAQDrUhFjIwl98gAAAABJRU5ErkJggg=="/>
-                </svg>                                
+            <input id="children" type="number" name="children-number" value="0" min="0">
+            <button class="button-change" type="button">
+                +                              
             </button>
           </div>
         <button class="button" type="submit">Найти</button>

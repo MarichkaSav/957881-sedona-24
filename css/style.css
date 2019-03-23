@@ -10,12 +10,21 @@ body {
     width: 1200px;
 }
 
-a {
-    text-decoration: none;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
-.hotels-page .navigation-item:last-child a {
-    color: #766357;
+a {
+    text-decoration: none;
 }
 
 .hotel-characteristics {
@@ -56,24 +65,30 @@ a {
 .filter-input-checkbox + label::before {
     content: "";
     position: absolute;
-    width: 26px;
-    height: 23px;
-    border: none;
-    background-image: url("../img/checkbox-on.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-  }
-
-.filter-input-checkbox-empty + label::before {
-    content: "";
-    position: absolute;
-    width: 23px;
+    left: 0;
+    width: 27px;
     height: 23px;
     border: none;
     background-image: url("../img/checkbox-off.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
-  }
+}
+
+.check-box {
+    padding-left: 40px;
+}
+
+.filter-input-checkbox:checked + label::before {
+    background-image: url("../img/checkbox-on.svg");
+}
+
+.filter-input-checkbox:disabled + label::before {
+    background-image: url("../img/checkbox-off-disabled.svg");
+}
+
+.filter-input-checkbox:checked:disabled + label::before {
+    background-image: url("../img/checkbox-on-disabled.svg");
+}
 
 .infrastructure-list > span {
     padding-bottom: 10px;
@@ -507,8 +522,25 @@ a {
 color: #81b3d2;
 }
 
+.navigation-item {
+width: 240px;
+text-align: left;
+}
+
+.navigation-item:nth-child(3) {
+    text-align: right;
+}
+
+.navigation-item:nth-child(4) {
+    text-align: right;
+}
+
 .navigation-item a:active {
     color: #cacaca;
+}
+
+.navigation-item-active a {
+    color: #766357;
 }
 
 .layout-background {
@@ -834,13 +866,12 @@ div.advantage-5  {
 }
 
 .adults label {
-    margin-right: 41px;
+    margin-right: auto;
 }
 
 .adults input {
     padding: 0;
     margin: 0;
-    margin-left: 38px;
     font: inherit;
     line-height: 26px;
     font-weight: 700;
@@ -852,55 +883,31 @@ div.advantage-5  {
     text-align: center;
 }
 
-.minus-1 {
-    padding: 0;
-    position: absolute;
-    background-color: transparent;
-    border: none;
-    top: 1;
-    left: 1;
-    color: #a9a9a9;
-    font: inherit;
-    line-height: 26px;
+.button-change {
     height: 38px;
     width: 38px;
-    font-weight: 700;
-    text-transform: uppercase;
-    background-color: #f2f2f2;
-    border: none;
-}
-
-.plus-1 {
     padding: 0;
-    position: absolute;
-    background-color: transparent;
+    margin: 0;
     border: none;
-    top: 1;
-    left: 1;
-    color: #a9a9a9;
-    font: inherit;
-    line-height: 26px;
-    height: 38px;
-    width: 38px;
-    font-weight: 700;
-    text-transform: uppercase;
+    cursor: pointer;
     background-color: #f2f2f2;
-    border: none;
+    color: #a9a9a9;
+    font-size: 24px;
+    font-weight: 700;
 }
 
-.minus-1:hover,
-.minus-1:focus {
+.button-change:hover,
+.button-change:focus {
     fill: #000000;
 }
 
-.minus-1:active {
+.button-change:active {
     color: #81b3d2;
 }
 
 .children input {
     padding: 0;
     margin: 0;
-    margin-left: 38px;
     font: inherit;
     line-height: 26px;
     font-weight: 700;
@@ -913,11 +920,19 @@ div.advantage-5  {
 }
 
 .children label {
-    margin-right: 27px;
+    margin-right: auto;
 }
 
 .children {
+    display: flex;
+    align-items: center;
     width: 182px;
+}
+
+.adults {
+    display: flex;
+    align-items: center;
+    width: 230px;
 }
 
 .hotel-search input:hover,
@@ -1032,15 +1047,3 @@ div.advantage-5  {
 }
 
 
-.visually-hidden:not(:focus):not(:active) {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}

@@ -6,6 +6,17 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Pixel Glass catalog -->
+    <style>
+        HTML {
+          background-repeat: no-repeat;
+          background-position:  50% 0;
+          background-image: url( "pp/img/sedona-hotels.jpg" );
+        }
+      </style>
+      <link rel="stylesheet" href="pp/pp-style.css">
+      <script src="pp/pp-script.js"></script>
+  <!-- // Pixel Glass -->
 </head>
 <body class="hotels-page">
     <header>
@@ -18,7 +29,7 @@
             </div>
             <div class="navigation-right">
                 <li class="navigation-item"><a href="map.html">Карта штата</a></li>
-                <li class="navigation-item"><a href="catalog.html">Гостиницы</a></li>
+                <li class="navigation-item navigation-item-active" ><a href="catalog.html">Гостиницы</a></li>
             </div>
         </ul>
         </nav>
@@ -32,15 +43,15 @@
                             <ul class="infrastructure-list">
                                 <li>
                                     <input class="visually-hidden filter-input-checkbox" type="checkbox" name="pool-checkbox" id="pool" checked>
-                                    <label for="pool">Бассейн</label>
+                                    <label class="check-box" for="pool">Бассейн</label>
                                 </li>
                                 <li>
-                                    <input class="visually-hidden filter-input-checkbox-empty" type="checkbox" name="parking-checkbox" id="parking" checked>
-                                    <label for="hotel">Парковка</label>
+                                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="parking-checkbox" id="parking">
+                                    <label class="check-box" for="parking">Парковка</label>
                                 </li>
                                 <li>
-                                    <input class="visually-hidden filter-input-checkbox-empty" type="checkbox" name="internet-checkbox" id="internet" checked>
-                                    <label for="hotel">wi-fi</label>
+                                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="internet-checkbox" id="internet">
+                                    <label class="check-box" for="internet">wi-fi</label>
                                 </li>
                             </ul>
                         </fieldset>
@@ -49,15 +60,15 @@
                             <ul class="accomodation-type-list">
                                 <li>
                                     <input class="visually-hidden filter-input-checkbox" type="checkbox" name="hotel-checkbox" id="hotel" checked>
-                                    <label for="hotel">Гостиница</label>
+                                    <label class="check-box" for="hotel">Гостиница</label>
                                 </li>
                                 <li>
                                     <input class="visually-hidden filter-input-checkbox" type="checkbox" name="motel-checkbox" id="motel" checked>
-                                    <label for="motel">Мотель</label>
+                                    <label class="check-box" for="motel">Мотель</label>
                                     </li>
                                 <li>
                                     <input class="visually-hidden filter-input-checkbox" type="checkbox" name="apartments-checkbox" id="apartments" checked>
-                                    <label for="apartments">Апартаменты</label>
+                                    <label class="check-box" for="apartments">Апартаменты</label>
                                 </li>
                             </ul>
                         </fieldset >
