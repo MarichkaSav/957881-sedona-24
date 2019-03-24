@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 0 auto;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 21px;
@@ -8,6 +8,9 @@ body {
     text-transform: uppercase;
     background-color: #ffffff;
     width: 1200px;
+    box-shadow:
+    0 -5px 20px 5px #dbdbdb, 
+    0 -40px 0 40px #f2f2f2;
 }
 
 .visually-hidden {
@@ -31,7 +34,7 @@ a {
     color: white;
     display: flex;
     background-color: #7092b0;
-    padding: 30px 75px;
+    padding: 24px 75px;
     background: url("../img/filter-background.jpg") no-repeat;
 }
 
@@ -41,10 +44,11 @@ a {
 }
 
 .infrastructure {
-    margin-right: 100px;
+    margin-right: 110px;
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .infrastructure-title {
@@ -57,7 +61,7 @@ a {
 }
 
 .infrastructure-list > li {
-    padding: 10px 0;
+    padding: 13px 0;
     display: block;
     position: relative;
 }
@@ -99,7 +103,7 @@ a {
 }
 
 .accomodation-type-list > li {
-    padding: 10px 0;
+    padding: 13px 0;
     display: block;
     position: relative;
 }
@@ -179,7 +183,7 @@ a {
 }
 
 .filter-up {
-    margin-right: 12px;
+    margin-right: 2px;
     background-color: transparent;
     border: none;
     fill: #cacaca;
@@ -271,13 +275,13 @@ a {
     padding-right: 73px;
     margin-bottom: -1px;
     outline: 2px solid red;
-    padding-top: 31px;
-    padding-bottom: 31px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .rating p {
     margin: 0;
-    margin-top: 45px;
+    margin-top: 35px;
     color: #666666;
     background-color: #f2f2f2;
     margin-left: auto;
@@ -295,10 +299,16 @@ a {
 
 .hotel-description {
     padding: 0;
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
     width: 258px;
     margin-left: 30px;
+    height: 90px;
+}
+
+.hotel-description p {
+    margin: 0;
 }
 
 .price {
@@ -987,6 +997,7 @@ div.advantage-5  {
 }
 
 .social-icons {
+    margin-right: 15px;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -1027,7 +1038,7 @@ div.advantage-5  {
 }
 
 .copyright span {
-    margin-right: 15px;
+    margin-right: 8px;
 }
 
 .copyright {
