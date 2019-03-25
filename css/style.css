@@ -40,7 +40,7 @@ a {
     padding-top: 27px;
     padding-left: 70px;
     padding-right: 65px;
-    padding-bottom: 2px;
+    padding-bottom: 6px;
     background: url("../img/filter-background.jpg") no-repeat;
 }
 
@@ -67,7 +67,7 @@ a {
 }
 
 .infrastructure-list > li {
-    padding: 13px 0;
+    padding: 12px 0;
     display: block;
     position: relative;
 }
@@ -109,7 +109,7 @@ a {
 }
 
 .accomodation-type-list > li {
-    padding: 13px 0;
+    padding: 12px 0;
     display: block;
     position: relative;
 }
@@ -129,11 +129,11 @@ a {
 }
 
 .search-field {
+    padding-top: 3px;
     margin: 0;
     display: flex;
     align-items: center;
-    min-height: 86px;
-    weight: 1056px;
+    height: 82px;
     outline: 2px solid red;
 }
 
@@ -271,7 +271,6 @@ a {
     padding: 0;
     list-style: none;
     display: block;
-    white-space: wrap;
 }
 
 .sedona-hotels li {
@@ -304,6 +303,10 @@ img.hotel {
     text-align: right;
 }
 
+.rating img {
+    padding-top: 3px;
+}
+
 .sedona-hotels div {
     outline: 2px solid red;
 }
@@ -331,8 +334,6 @@ img.hotel {
 .type {
     width: 110px;
     margin: 0;
-    margin-bottom: 17px;
-    margin-top: 15px;
 }
 
 .buttons {
@@ -342,6 +343,7 @@ img.hotel {
 
 .sedona-hotels h3 {
     margin: 0;
+    margin-bottom: -5px;
     width: 100%;
 }
 
@@ -358,6 +360,8 @@ img.hotel {
     border: none;
     width: 100%;
     padding: 18px;
+    margin-bottom: 22px;
+    margin-top: 28px;
 }
 
 .btn-transparent {
@@ -423,10 +427,15 @@ img.hotel {
     cursor: pointer;
 }
 
-.price-controls .min-price,
-.price-controls .max-price {
+.price-controls .min-price {
   width: 90px;
   padding-left: 65px;
+}
+
+.price-controls .max-price {
+    width: 90px;
+    padding-left: 52px;
+
 }
 
 .price-controls input {
@@ -480,7 +489,7 @@ img.hotel {
 }
   
 .range-toggle-max {
-    left: 80%;
+    left: 78%;
 }
 
 .button:hover,
@@ -663,12 +672,28 @@ text-align: left;
     margin-bottom: 50px;
 }
 
+p.reasons {
+    margin-top: 28px;
+    margin-bottom: 52px;
+}
+
 .main-advantages p {
+    margin: 0;
     text-align: center;
     line-height: 26px;
     color: #333333;
     margin-top: 19px;
-    margin-bottom: 42px;
+}
+
+.main-advantages .second-row {
+    margin: 0;
+    margin-bottom: 37px;
+}
+
+.main-advantages .first-row {
+    margin: 0;
+    margin-top: 17px;
+    margin-bottom: 0;
 }
 
 .advantage {
@@ -677,7 +702,7 @@ text-align: left;
 
 .sedona-features {
     margin: 0;
-    padding-top: 30px;
+    padding-top: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -687,6 +712,7 @@ text-align: left;
     padding-right: 63px;
     outline: 2px solid red;
     width: auto;
+    padding-bottom: 6px;
     min-height: 300px;
    
 }
@@ -715,6 +741,7 @@ text-align: left;
 .advantage-1 h3,
 .advantage-2 h3 {
     margin-top: 45px;
+    margin-bottom: 25px;
 }
 
 .main-advantages li.advantage p {
@@ -746,7 +773,7 @@ div.advantage-5  {
 .advantage-3 h3,
 .advantage-4 h3,
 .advantage-5 h3  {
-    margin-top: 48px;
+    margin-top: 47px;
 }
 
 .advantage-3 p,
@@ -791,7 +818,10 @@ div.advantage-5  {
 }
 
 .layout-form {
-    padding: 38px 56px;
+    margin-top: 45px;
+    padding-bottom: 33px;
+    padding-right: 54px;
+    padding-left: 54px;
     width: 100%; 
     display: flex;
     flex-wrap: wrap;
@@ -806,12 +836,16 @@ div.advantage-5  {
     justify-content: space-between;
     align-self: center;
     width: 460px;
-    height: 38px;
 }
 
 .input-departure {
-    align-self: flex-start;
-    margin-top: 11px;
+    align-self: flex-end;
+    margin-top: 25px;
+}
+
+.input-arrival {
+    align-self: flex-end;
+    margin-top: 9px;
 }
 
 .button-change {
@@ -884,7 +918,7 @@ div.advantage-5  {
     color: #ffffff;
     background-color: #766357;
     width: 570px;
-    padding: 30px 0;
+    padding: 28px 0;
     outline: 2px solid red;
 }
 
@@ -928,12 +962,6 @@ div.advantage-5  {
 .departure-date input {
     margin-left: 18px;
     position: relative;
-}
-
-.adults {
-    margin: 0;
-    padding: 0;
-    width: 230px;
 }
 
 .adults label {
@@ -999,13 +1027,18 @@ div.advantage-5  {
     align-items: center;
     align-self: flex-start;
     width: 182px;
+    height: 90px;
 }
 
 .adults {
+    margin: 0;
+    padding: 0;
+    width: 230px;
     display: flex;
     align-items: center;
     align-self: flex-start;
     width: 230px;
+    height: 90px;
 }
 
 .hotel-search input:hover,
@@ -1025,7 +1058,7 @@ div.advantage-5  {
 
 .page-footer {
     position: relative;
-    margin: -123px 0 0 0;
+    margin: -120px 0 0 0;
     width: auto;
     outline: 2px solid red;
     display: flex;
@@ -1033,7 +1066,7 @@ div.advantage-5  {
     align-items: center;
     padding-left: 132px;
     padding-right: 101px;
-    min-height: 123px;
+    height: 120px;
     background-color: #ffffff;
     opacity: 0.9;
 }
@@ -1048,7 +1081,7 @@ div.advantage-5  {
     align-items: center;
     padding-left: 132px;
     padding-right: 101px;
-    min-height: 120px;
+    height: 120px;
     background-color: #ffffff;
 }
 
@@ -1065,6 +1098,7 @@ div.advantage-5  {
     justify-content: space-between;
     width: 150px;
     min-height: 48px;
+    padding-left: 43px;
 }
 
 .social-icon {
@@ -1076,7 +1110,7 @@ div.advantage-5  {
 .social-button {
     outline: 2px solid red;
     width: 46px;
-    min-height: 48px;
+    height: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
