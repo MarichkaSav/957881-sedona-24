@@ -50,7 +50,7 @@ a {
 }
 
 .infrastructure {
-    margin-right: 115px;
+    margin-right: 117px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -134,7 +134,6 @@ a {
     display: flex;
     align-items: center;
     height: 82px;
-    outline: 2px solid red;
 }
 
 .found {
@@ -232,7 +231,7 @@ a {
 
 .button-book {
     margin: 0;
-    padding: 5px 16px;
+    padding: 6px 17px;
     color: #ffffff;
     background-color: #766357;
     font-weight: 700;
@@ -278,24 +277,31 @@ a {
     display: flex;
     border: 1px solid #e5e5e5;
     padding-left: 73px;
-    padding-right: 73px;
+    padding-right: 72px;
     margin-bottom: -1px;
-    outline: 2px solid red;
-    padding-top: 25px;
-    padding-bottom: 30px;
+    padding-top: 24px;
+    padding-bottom: 29px;
+}
+
+.sedona-hotels .hotel-2 {
+    padding-bottom: 29px;
+}
+
+.sedona-hotels .hotel-3 {
+    padding-bottom: 28px;
 }
 
 img.hotel {
-    padding-top: 5px;
+    padding-top: 7px;
 }
 
 .rating p {
     margin: 0;
-    margin-top: 40px;
+    margin-top: 45px;
     color: #666666;
     background-color: #f2f2f2;
     margin-left: auto;
-    padding: 5px 15px;
+    padding: 2px 11px;
 }
 
 .rating {
@@ -304,11 +310,8 @@ img.hotel {
 }
 
 .rating img {
-    padding-top: 3px;
-}
-
-.sedona-hotels div {
-    outline: 2px solid red;
+    padding-top: 4px;
+    padding-right: 1px;
 }
 
 .hotel-description {
@@ -316,8 +319,8 @@ img.hotel {
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    width: 258px;
-    margin-left: 30px;
+    width: 260px;
+    margin-left: 29px;
     height: 95px;
 }
 
@@ -326,9 +329,9 @@ img.hotel {
     padding: 0;
 }
 
-.price {
+.hotel-description .price {
     margin: 0;
-    margin-left: 6px;
+    margin-left: 4px;
 }
 
 .type {
@@ -343,7 +346,6 @@ img.hotel {
 
 .sedona-hotels h3 {
     margin: 0;
-    margin-bottom: -5px;
     width: 100%;
 }
 
@@ -359,7 +361,7 @@ img.hotel {
     background-color: #81b3d2;
     border: none;
     width: 100%;
-    padding: 18px;
+    padding: 17px;
     margin-bottom: 22px;
     margin-top: 28px;
 }
@@ -434,8 +436,7 @@ img.hotel {
 
 .price-controls .max-price {
     width: 90px;
-    padding-left: 52px;
-
+    padding-left: 51px;
 }
 
 .price-controls input {
@@ -511,7 +512,6 @@ img.hotel {
     display: flex;
     width: 1200px;
     background-color: #ffffff;
-    outline: 2px solid red;
     position: relative;
 }
 
@@ -519,7 +519,6 @@ img.hotel {
     position: absolute;
     padding: 0;
     left: 530px;
-    outline: 2px solid red;
     width: 138px;
     height: 56px;
     z-index: 1;
@@ -529,7 +528,6 @@ img.hotel {
     margin: 0;
     padding: 0;
     list-style: none;
-    outline: 2px solid red;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -633,7 +631,6 @@ text-align: left;
     min-height: 256px;
     background-color: #81b3d2;
     color: #ffffff;
-    outline: 2px solid red;
 }
 
 .advantage-1 p {
@@ -647,7 +644,8 @@ text-align: left;
     text-align: center;
     font-weight: 700;
     margin-top: 59px;
-    outline: 2px solid red;
+    margin-left: 375px;
+    width: 450px;
 }
 
 .true-city {
@@ -662,6 +660,9 @@ text-align: left;
     font-size: 21px;
     text-align: center;
     font-weight: 700;
+    width: 151px;
+    margin-left: 125px;
+    margin-bottom: 25px;
 }
 
 .advantages p {
@@ -675,6 +676,7 @@ text-align: left;
 p.reasons {
     margin-top: 28px;
     margin-bottom: 52px;
+    margin-left: 2px;
 }
 
 .main-advantages p {
@@ -683,17 +685,42 @@ p.reasons {
     line-height: 26px;
     color: #333333;
     margin-top: 19px;
-}
-
-.main-advantages .second-row {
-    margin: 0;
-    margin-bottom: 37px;
+    align-content: center;
 }
 
 .main-advantages .first-row {
     margin: 0;
-    margin-top: 17px;
-    margin-bottom: 0;
+    margin-top: 18px;
+    margin-bottom: 37px;
+    width: 285px;
+}
+
+.advantage-1 .first-row {
+    margin-left: 57px;
+    margin-top: 16px;
+}
+
+.advantage-2 .first-row {
+    width: 320px;
+    margin-left: 40px;
+    margin-top: 16px;
+}
+
+.advantage-3 .first-row {
+    margin-left: 57px;
+    margin-top: 15px;
+}
+
+.advantage-4 .first-row {
+    width: 275px;
+    margin-top: 15px;
+    margin-left: 63px;
+}
+
+.advantage-5 .first-row {
+    width: 255px;
+    margin-top: 15px;
+    margin-left: 72px;
 }
 
 .advantage {
@@ -702,24 +729,31 @@ p.reasons {
 
 .sedona-features {
     margin: 0;
-    padding-top: 24px;
+    padding-top: 58px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     list-style: none;
     text-align: center;
-    padding-left: 73px;
-    padding-right: 63px;
-    outline: 2px solid red;
+    padding-left: 57px;
+    padding-right: 57px;
     width: auto;
-    padding-bottom: 6px;
-    min-height: 300px;
-   
+    padding-bottom: 11px;
+    min-height: 260px;  
 }
 
 .sedona-features h4 {
     font-size: 21px;
     margin: 20px;
+    margin-top: 21px;
+    margin-bottom: 22px;
+}
+
+.sedona-feature-1 h4 {
+    margin-top: 18px;
+}
+
+.sedona-feature-3 h4 {
+    margin-top: 18px;
 }
 
 .sedona-feature p {
@@ -735,7 +769,6 @@ p.reasons {
     min-height: 256px;
     background-color: #81b3d2;
     color: #ffffff;
-    outline: 2px solid red;
 }
 
 .advantage-1 h3,
@@ -766,7 +799,6 @@ div.advantage-5  {
     width: 400px;
     background-color: #eeeeee;
     min-height: 256px;
-    outline: 2px solid red;
     margin-bottom: 50px;
 }
 
@@ -792,9 +824,8 @@ div.advantage-5  {
     line-height: 36px;
     font-weight: 700;
     text-align: center;
-    outline: 2px solid red;
     padding: 0;
-    margin-bottom: 22px;
+    margin-bottom: 24px;
 }
 
 .booking-proposal {
@@ -802,15 +833,13 @@ div.advantage-5  {
     padding: 0;
     line-height: 24px;
     color: #333333;
-    outline: 2px solid red;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
 }
 
 .hotel-search {
     display: flex;
     flex-wrap: wrap;
     width: 570px;
-    outline: 2px solid red;
     left: 315px;
     min-height: 395px;
     position: absolute;
@@ -818,10 +847,10 @@ div.advantage-5  {
 }
 
 .layout-form {
-    margin-top: 45px;
-    padding-bottom: 33px;
-    padding-right: 54px;
-    padding-left: 54px;
+    margin-top: 42px;
+    padding-bottom: 32px;
+    padding-right: 53px;
+    padding-left: 53px;
     width: 100%; 
     display: flex;
     flex-wrap: wrap;
@@ -841,11 +870,13 @@ div.advantage-5  {
 .input-departure {
     align-self: flex-end;
     margin-top: 25px;
+    margin-left: 6px;
 }
 
 .input-arrival {
     align-self: flex-end;
-    margin-top: 9px;
+    margin-top: 12px;
+    margin-left: 6px;
 }
 
 .button-change {
@@ -857,7 +888,6 @@ div.advantage-5  {
     font-size: 24px;
     font-weight: 700;
     border: none;
-    color: red;
     background: transparent;
 
 }
@@ -918,8 +948,7 @@ div.advantage-5  {
     color: #ffffff;
     background-color: #766357;
     width: 570px;
-    padding: 28px 0;
-    outline: 2px solid red;
+    padding: 30px 0;
 }
 
 .form-name:hover,
@@ -941,7 +970,7 @@ div.advantage-5  {
 
 .date-input {
     box-sizing: border-box;
-    padding: 8px 0 8px 11px;
+    padding: 8px 0 8px 7px;
     font: inherit;
     line-height: 26px;
     font-weight: 700;
@@ -950,7 +979,6 @@ div.advantage-5  {
     border: none;
     width: 346px;
     min-height: 38px;
-    outline: 2px solid red;
 }
 
 .arrival-date input {
@@ -966,6 +994,8 @@ div.advantage-5  {
 
 .adults label {
     margin-right: auto;
+    margin-left: 2px;
+    margin-top: 3px;
 }
 
 .adults input {
@@ -1019,7 +1049,9 @@ div.advantage-5  {
 }
 
 .children label {
-    margin-right: auto;
+    margin-right: 26px;
+    margin-left: 0px;
+    margin-top: 3px;
 }
 
 .children {
@@ -1060,7 +1092,6 @@ div.advantage-5  {
     position: relative;
     margin: -120px 0 0 0;
     width: auto;
-    outline: 2px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1108,7 +1139,6 @@ div.advantage-5  {
 }
 
 .social-button {
-    outline: 2px solid red;
     width: 46px;
     height: 48px;
     display: flex;
@@ -1141,7 +1171,6 @@ div.advantage-5  {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    outline: 2px solid red;
 }
 
 .copyright:hover path,
